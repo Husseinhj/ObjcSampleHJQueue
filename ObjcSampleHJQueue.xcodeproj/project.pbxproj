@@ -13,7 +13,23 @@
 		E66551AE1F67BA2F00EBB5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66551AC1F67BA2F00EBB5B1 /* Main.storyboard */; };
 		E66551B01F67BA2F00EBB5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66551AF1F67BA2F00EBB5B1 /* Assets.xcassets */; };
 		E66551B31F67BA2F00EBB5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66551B11F67BA2F00EBB5B1 /* LaunchScreen.storyboard */; };
+		E66551BB1F67BA4D00EBB5B1 /* TimerHJQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66551BA1F67BA4D00EBB5B1 /* TimerHJQueue.framework */; };
+		E66551BC1F67BA4D00EBB5B1 /* TimerHJQueue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E66551BA1F67BA4D00EBB5B1 /* TimerHJQueue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E66551BD1F67BA4D00EBB5B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E66551BC1F67BA4D00EBB5B1 /* TimerHJQueue.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E66551A01F67BA2F00EBB5B1 /* ObjcSampleHJQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcSampleHJQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		E66551AF1F67BA2F00EBB5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66551B21F67BA2F00EBB5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E66551B41F67BA2F00EBB5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E66551BA1F67BA4D00EBB5B1 /* TimerHJQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimerHJQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66551BB1F67BA4D00EBB5B1 /* TimerHJQueue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 		E66551971F67BA2F00EBB5B1 = {
 			isa = PBXGroup;
 			children = (
+				E66551BA1F67BA4D00EBB5B1 /* TimerHJQueue.framework */,
 				E66551A21F67BA2F00EBB5B1 /* ObjcSampleHJQueue */,
 				E66551A11F67BA2F00EBB5B1 /* Products */,
 			);
@@ -89,6 +108,7 @@
 				E665519C1F67BA2F00EBB5B1 /* Sources */,
 				E665519D1F67BA2F00EBB5B1 /* Frameworks */,
 				E665519E1F67BA2F00EBB5B1 /* Resources */,
+				E66551BD1F67BA4D00EBB5B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,6 +334,7 @@
 				E66551B91F67BA2F00EBB5B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
