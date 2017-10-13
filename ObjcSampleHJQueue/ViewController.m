@@ -28,6 +28,7 @@
     _timerIntervalPickerView.dataSource = self;
     
     _queue = [[HJQueue alloc] initInfiniteLength];
+    _queue.dequeueCount = 3;
     [_queue setDelegate:self];
 
     [_timerDequeueSwitch setOn:YES];
@@ -79,6 +80,14 @@
 
 -(void) dequeueWithTick:(id)object{
     _logTextView.text = [NSString stringWithFormat:@"%@ Dequeue periodic ('%.01f') with value : %@ \n",_logTextView.text,[_queue queueTimeInterval],object];
+}
+
+-(void) dequeueArrayWithTick:(NSArray<id> *)objects{
+    NSString *message = @"";
+    for (id object in objects) {
+        message = [message stringByAppendingString:[NSString stringWithFormat:@"%@ \n",object]];
+    }
+    _logTextView.text = [NSString stringWithFormat:@"%@ Dequeue periodic ('%.01f') with value : %@ \n",_logTextView.text,[_queue queueTimeInterval],message];
 }
 
 #pragma mark - pickerView delegates
